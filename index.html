@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animate Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="bootstrap-icons\bootstrap-icons.css">
+</head>
+<body>
+    <section class="banner">
+        <nav>
+            <a href="#" class="logo"><span>My</span>Portfolio_</a>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Work</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="content">
+            <h3>Hey_</h3>
+            <h2>I`m a <span class="type"></span></h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Sit voluptate tenetur laboriosam! 
+            Harum quos aut molestiae minima asperiores laborum nihil.</p>
+            <button>Hire Me</button>
+            <button class="chat"><i class="bi bi-chat"></i>Let`s Chat</button>
+        </div>
+        <img src="images/colors.png" class="colors">
+        <img src="images/hero.png" class="hero">
+        <ul class="sci">
+            <li><a href="#"><i class="bi bi-facebook"></i></a></li>
+            <li><a href="#"><i class="bi bi-linkedin"></i></a></li>
+            <li><a href="#"><i class="bi bi-skype"></i></a></li>
+            <li><a href="#"><i class="bi bi-instagram"></i></a></li>
+        </ul>
+        <div class="dayNight">
+            <i class="bi bi-moon"></i>
+            <i class="bi bi-sun"></i>
+        </div>
+    </section>
+
+    <script src="typed/typed.min.js"></script>
+    <script>
+    	let banner = document.querySelector('.banner');
+    	let dayNight = document.querySelector('.dayNight');
+    	dayNight.onclick = function (){
+    		banner.classList.toggle('night')
+    	}
+
+    	let typed = new Typed(".type", {
+			strings: ["Web Developer", "Designer", "Teacher"],
+			typeSpeed: 100,
+			backSpeed: 50,
+			loop: true
+		})
+    </script>
+
+</body>
+</html>
